@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="index.js" ></script>
+</head>
+<body onkeydown="handleKeyDown(event)">
+    <div id="main">
+        <div id="up">
+          <h2>Регистрация пользователя</h2>
+        </div>
+        <div id="reg">
+            <form name="userInfo">
+                <div class="tooltip">
+                    <input type="text" id="Name" name="Name" placeholder="Имя*" required autofocus 
+                        onblur="checkElement(event);" autocomplete="off">
+                    <span class="tooltiptext">Имя может содержать только латинские и русские буквы.<br>Длина от 2 до 25 символов</span>
+                </div>
+                <div class="error" id="errorName"> </div>
+                <div class="tooltip">
+                    <input type="text" id="Email"  name="Email" placeholder="Электронный адрес*" required 
+                        onblur="checkElement(event);" autocomplete="off")>
+                    <span class="tooltiptext">Введите адрес электронной почты в виде: <b>mymail@example.com</b></span>
+                </div>
+                <div class="error" id="errorEmail"> </div>
+                <div class="tooltip">
+                    <input type="password" id="Password" name="Password" placeholder="Пароль*" required 
+                    onblur="checkElement(event);" autocomplete="off">
+                    <span class="tooltiptext">
+                        Пароль должен содержать:<br>
+                        &Tab;&middot;Хотя бы одну цифру<br>
+                        &Tab;&middot;Хотя бы одну латинсую букву в нижнем регистре<br>
+                        &Tab;&middot;Хотя бы одну латнискую букву в верхнем регистре<br>
+                        &Tab;&middot;Хотя бы один спецсимвол<br>
+                        &Tab;&middot;Не менее 8 и не более 40 символов<br>
+                        Пароль не должен содержать пробелы
+                    </span>
+                </div>
+                <div class="error" id="errorPassword"> </div>
+                <input type="button" value="Отправить" onclick="upload(event)">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
