@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="index.js" defer></script>
+    
     <title>О авторе</title>
 </head>
 <body>
-    
+    <!-- Шапка сайта -->
+    <header>
+        <!-- Логотип сайта -->
+        <div class="logo">
+            <img src="images/logo.png" alt="Логотип Лампочки">
+        </div>
+        <!-- Краткое описание сайте -->
+        <div class="description">
+            <span>Лампы ручной работы в стиле Steampunk</span>
+        </div>
+    </header>
+    <!-- Основаня часть сайта -->
+    <main>
+        <!-- Блок с информацией о разработчике -->
+        <div class="content about-developer">
+            <h2>О разработчике</h2>
+            <p>Сайт разработал <strong>Каминский Игорь</strong>, студент 3-го курса <i>ГГТУ им. П.О. Сухого</i>. Данный сайт разработан в качестве первого задания на тренингах по <i>FRONT-END</i> от <i>EPAM</i>.</p>
+            
+            <p>Для связи с разработчиком сайта Вы можете использовать форму обратной связи, которая представлена ниже.</p>
+        </div>
+        <!-- Форма обратной связи -->
+        <div class="feedback-form-container">
+            <form class="feedback-form" action="feedback.php" method="POST">
+                <p class="feedback-form-title">ФОРМА ОБРАТНОЙ СВЯЗИ</p>
+                <span class="feedback-form-input">
+                    <label for="visitor-email">E-mail:</label>
+                    <input type="email" name="visitor-email" id="visitor-email" placeholder="Введите свой email.." required>
+                </span>
+                <span class="feedback-form-input">
+                    <label for="visitor-name">Имя:</label>
+                    <input type="text" name="visitor-name" id="visitor-name" placeholder="Введите свое имя.." required>
+                </span>
+                <textarea class="feedback-form-textarea" name="feedback-text" id="feedback-text" placeholder="Укажите здесь свои вопросы и пожелания..." required></textarea>
+                <input class="feedback-form-button" type="submit">
+            </form>
+        </div>
+    </main>
+     <!-- Меню сайта -->
+     <nav>
+        <a href="home.html">На главную</a>
+        <a href="table.html">Информация</a>
+        <a href="#">О разработчике</a>
+    </nav>
+    <!-- Подвал сайта -->
+    <footer>
+        <!-- Контейнер с текущей датой -->
+        <div class="date-container">
+            <p id="date"></p>
+        </div>
+        <!-- Сведения о разработчике сайта -->
+        <div class="about">Разработчик сайта: Игорь Каминский</div>
+        <!-- Версия сайта -->
+        <div class="version">ver 1.0a</div>
+    </footer>
 </body>
 </html>

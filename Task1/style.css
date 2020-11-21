@@ -1,0 +1,321 @@
+/* Загрузка Гугл шрифта */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+/* Фоновое изображение сайта */
+body {
+    background: url(images/background.jpg);
+}
+/* Стили шапки сайта */
+header {
+    margin: 0 160px;
+    width: 76%;
+    min-width: 420px;
+    max-width: 1200px;
+    height: 120px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.logo {
+    padding: 10px 25px;
+    height: 80%;
+    width: 50%;
+}
+.logo img {
+    max-width: 95%;
+    min-width: 230px;
+}
+.description {
+    margin: auto 0;
+}
+.description span {
+    padding-right: 10px; 
+    font-size: 2rem;
+    
+    font-family: 'Amatic SC', cursive;;
+    align-self: flex-end;
+}
+/* Стили главной части сайта */
+main {
+    padding: 10px;
+    margin: 0 160px;
+    width: 75%;
+    min-width: 420px;
+    max-width: 1200px;
+    min-height: 420px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+}
+
+/* Стили оформления блоков текста на станице сайта */
+div.content {
+    background-color: cornsilk;
+    border-radius: 2px;
+    border: 1px solid #168713;
+    padding: 20px 30px;
+    
+    margin: 15px auto;
+    width: 80%;
+}
+/* Стиль заголовка */
+div.content h2 {
+    
+    width: 100%-10px;
+    text-align: right;
+    padding: 5px 10px 5px 0px;
+    margin-bottom: 30px;
+    color: #1b311b;
+    background-color: #e6dede;
+}
+/* Стиль абзаца */
+div.content p {
+    text-indent: 8%;
+    text-align: justify;
+    font-size: larger;
+    font-weight: 500;
+}
+/* Стиль списка */
+div.content li {
+    text-indent: 0%;
+    margin-left: 4%;
+    padding: 4px;
+    list-style-image: url(images/light.png);
+    text-align: justify;
+    font-size: larger;
+    font-weight: 500;
+}
+
+/* Стили меню */
+nav {
+    height: 420px;
+    margin: 140px 0;
+    width: 10%;
+    min-width: 160px;
+    border-radius: 0 10px 10px 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav a {
+    margin: 10px 0;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #818181;
+    display: block;
+}
+nav a:hover {
+    color: #000;
+    background-color: cornsilk;
+}
+
+/* Стили подвала */
+footer {
+    padding: 10px;
+    margin: 0 160px;
+    width: 75%;
+    min-width: 400px;
+    max-width: 1200px;
+    height: 160px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.date-container {
+    
+    padding: 8px 15px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    background-color: #295261;
+    color: rgb(243, 233, 221);
+    border-radius: 2px;
+}
+.devby {
+    padding: 8px 15px;
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+    font-weight: bold;
+    background-color: cornsilk;
+    border-radius: 2px;
+}
+.version {
+    padding: 2px 5px;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #e6e6e6;
+    color: #1b311b;
+    border-radius: 2px;
+}
+
+/* Стили для страницы home.html */
+
+/* Стили для изображений */
+.galery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+  }
+  .column {
+    flex: 50%;
+    max-width: 46%;
+    padding: 0 4px;
+  }
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+/* Стили для страницы table.html */
+
+/* Стили для блока выбора стиля таблицы */
+.style-selector-container {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    background-color: #e6e6e6;
+}
+/* Стили для таблицы */
+/* Пустой стиль */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 15px;
+    text-align: left;
+  }
+ /* Черно-белый стиль */ 
+  .t01 tr:nth-child(even) {
+    background-color: #eee;
+  }
+  .t01 tr:nth-child(odd) {
+   background-color: #fff;
+  }
+  .t01 th {
+    background-color: black;
+    color: white;
+  }
+/* Тропический стиль */
+  .t02 tr:nth-child(even) {
+    background-color: rgb(196, 140, 67);
+    color: rgb(232, 241, 206);
+}
+  .t02 tr:nth-child(odd) {
+   background-color: rgb(207, 48, 48);
+   color: rgb(232, 241, 206);
+  }
+  .t02 th {
+    background-color: rgb(232, 241, 206);
+    color: black;
+  }
+/* Холодный стиль */
+.t03 tr:nth-child(even) {
+    background-color: rgb(190, 215, 233);
+    color: rgb(18, 38, 63);
+}
+  .t03 tr:nth-child(odd) {
+   background-color: rgb(6, 82, 126);
+   color: rgb(240, 230, 243);
+  }
+  .t03 th {
+    background-color: rgb(213, 244, 248);
+    color: rgb(1, 85, 155);
+  }
+  
+/* Стили для страницы about.html*/
+
+/* Стили формы обратной свзяи*/
+/* Стили обертки формы */
+.feedback-form-container {
+    margin: 10px auto;
+    width: 60%;
+    min-width: 300px;
+    min-height: 250px;
+    background-color: lightsteelblue;
+    border-radius: 2px;
+}
+/* Стили формы */
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* Стили заголовка формы */
+.feedback-form-title {
+    padding: 15px 5px;
+    width: 100% - 10px;
+    border-radius: 2px;
+    text-align: center;
+    color: aquamarine;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-self: flex-start;
+    background-color: cadetblue;
+
+}
+/* Стили полей ввода */
+.feedback-form-input {
+    margin: 10px auto;
+    width: 90%;
+    min-width: 150px;
+    max-width: 100%;
+    max-height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.feedback-form-input > label {
+    margin-right: 10px;
+    min-width: 50px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.feedback-form-input > input {
+    min-width: 200px;
+    max-width: 100%;
+}
+.feedback-form-textarea {
+    margin: 25px 5%;
+    min-width: 90%;
+    max-width: 90%;
+    min-height: 60px;
+    max-height: 400px;
+}
+/* Стили кнопки формы */
+.feedback-form-button {
+    margin: 10px auto;
+    padding: 5px 10px;
+    background-color: cadetblue;
+    color: aquamarine;
+    border: 1px solid aquamarine;
+}
+.feedback-form-button:hover {
+    cursor: pointer;
+    background-color: aquamarine;
+    color: cadetblue;
+    border: 1px solid cadetblue;
+}
