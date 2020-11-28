@@ -1,76 +1,81 @@
 <!DOCTYPE html>
-<html lang="кг">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="index.js" defer></script>
-    <title>Домашняя страница</title>
+    <title>Главная страница магазина "Лампочка"</title>
 </head>
 <body>
     <!-- Шапка сайта -->
-    <header>
+    <header  itemscope itemtype="http://schema.org/Organization">
         <!-- Логотип сайта -->
         <div class="logo">
-            <img src="images/logo.png" alt="Логотип Лампочки">
+            <img itemprop="logo" src="images/logo.png" alt="Логотип Лампочки">
         </div>
-        <!-- Краткое описание сайте -->
+        <!-- Краткое описание сайта -->
         <div class="description">
-            <span>Лампы ручной работы в стиле Steampunk</span>
+            <span itemprop="description">Лампы ручной работы в стиле Steampunk</span>
         </div>
     </header>
     <!-- Основаня часть сайта -->
-    <main>
+    <main  itemscope itemtype="http://schema.org/Organization">
         <!-- Описание компании -->
-        <div class="content">
-            <h2>О нас</h2>
-            <p>Мы группа <del>энтузиастов</del> мастеров с многолетним опытом создания ламп с индивидуальным дизайном в стиле <i>Steampunk</i>. Мы занимаемся тем, что нам нравится и это открывает нам практически безграничные возможности проявления нашей фантазии.</p>
-            <p>В каждую лампу вкладывается <del>много денег</del> <em>душа</em>, <em>индивидуальность</em>, тем самым украшая Ваш дом оригинальным элементом, которому можно придумать <strong>собственную захватывающую легенду</strong>.</p>
-            <p>Наша компания заняла узкую нишу в изготовлении оригинальных ламп в стиле <i>Steampunk</i>. Мы рады, что можем посвятить наши навыки и фантазию на создание оригинального подарка для Вас или Вашего знакомого, и очень надеемся, что новый элемент интерьера принесет атмосферу времен паровых машин к Вам в дом.</p>
-            <p>Наша компания предлагает Вам следующие услуги:</p>
-            <ul>
-                <li>Изготовление <strong>ламп</strong> и <strong>лампочек</strong> к ним в <em>индивидуальном стиле</em>;</li>
-                <li>Индивидуальные надписи на лампе;</li>
-                <li><em>Разнообразный декор ручного изготовления</em>, который придаст ещё больше атмосферности;</li>
-                <li>Оснащение лампы датчиками, которые позволят включать и выключать ее <em>без прикосновений</em>;</li>
-                <li>Изготовление оригинального <strong>ночника с часами</strong>.</li>
-            </ul>
-            <p>В разделе <a href="table.html">Информация</a> Вы можете подробнее подробнее ознакомиться с нашими услугами и ценами на них.</p>
-            <p>Если Вы хотите детальнее рассмотреть примеры наших изделий, то можете посетить наш магазин, который расположен по следующему адресу: <strong>РБ, Гомель, Речицкий пр-т 18</strong>.</p>
-            <p>Вы можете связаться с нами по электронной почте: <a href="mailto:lampochka_company@gmail.ru">lampochka_company@gmail.ru</a>, или по номеру телефона: <a href="tel:375290987654">+375 (29) 098-76-54</a>.</p>
-            <h2>Галерея</h2>
-            <p>Ниже представлены изображения с примерами наших ламп. Надеемся, что это поможет Вам лучше представить свою будущую лампу.</p>
+        <section class="content">
+            <article itemscope itemtype="http://schema.org/Article">
+                <h2 itemprop="name">О нас</h2>
+                <p><strong itemprop="name">"Лампочка"</strong> - это группа умелых мастеров с многолетним опытом создания ламп с индивидуальным дизайном в стиле <i>Steampunk</i>. Мы занимаемся тем, что нам нравится и это открывает нам практически безграничные возможности проявления нашей фантазии.</p>
+                <p>В каждую лампу вкладывается <del>много денег</del> <em>душа</em>, <em>индивидуальность</em>, тем самым украшая Ваш дом оригинальным элементом, которому можно придумать <strong>собственную захватывающую легенду</strong>.</p>
+                <p>Наша компания заняла узкую нишу в изготовлении оригинальных ламп в стиле <i>Steampunk</i>. Мы рады, что можем посвятить наши навыки и фантазию на создание оригинального подарка для Вас или Вашего знакомого, и очень надеемся, что новый элемент интерьера принесет атмосферу времен паровых машин к Вам в дом.</p>
+                <p>Наша компания предлагает Вам следующие услуги:</p>
+                <ul itemscope itemtype="http://schema.org/ItemList">
+                    <li itemprop="owns" itemscope itemtype="http://schema.org/Product">Изготовление <strong itemprop="itemOffered">ламп</strong> и <strong itemprop="itemOffered">лампочек</strong> к ним в <em>индивидуальном стиле</em>;</li>
+                    <li itemprop="owns" itemscope itemtype="http://schema.org/Product">Индивидуальные надписи на лампе;</li>
+                    <li itemprop="owns" itemscope itemtype="http://schema.org/Product"><em itemprop="itemOffered">Разнообразный декор ручного изготовления</em>, который придаст ещё больше атмосферности;</li>
+                    <li itemprop="owns" itemscope itemtype="http://schema.org/Product">Оснащение лампы <span itemprop="itemOffered">датчиками</span>, которые <span itemprop="description">позволят включать и выключать ее <em>без прикосновений</em></span>;</li>
+                    <li itemprop="owns" itemscope itemtype="http://schema.org/Product">Изготовление оригинального <strong itemprop="itemOffered">ночника с часами</strong>.</li>
+                </ul>
+                <p>В разделе <a itemprop="url" href="table.html">Информация</a> Вы можете подробнее подробнее ознакомиться с нашими услугами и ценами на них.</p>
+                <p>Если Вы хотите детальнее рассмотреть примеры наших изделий, то можете посетить наш магазин, который расположен по следующему адресу: <strong class="h-adr" itemprop="address"><span class="location" itemscope itemtype="http://schema.org/PostalAddress"><span class="p-region" itemprop="addressLocality">РБ, Гомель</span>, <span class="p-street-address" itemprop="streetAddress">Речицкий пр-т 18</span></span></strong>.</p>
+                <p itemprop="contactPoints" itemscope itemtype="http://schema.org/ContactPoint">Вы можете связаться с нами по электронной почте: <a itemprop="email" href="mailto:lampochka_company@gmail.ru">lampochka_company@gmail.ru</a>, или по номеру телефона: <a itemprop="telephone" href="tel:375290987654">+375 (29) 098-76-54</a>.</p>
+            </article>
+        
+            <article itemscope itemtype="http://schema.org/Article">
+                <h2 itemprop="name">Галерея</h2>
+                <p>Ниже представлены изображения с примерами наших ламп. Надеемся, что это поможет Вам лучше представить свою будущую лампу.</p>
             <!-- Блок с галерей -->
-            <div class="galery">
-                <div class="column">
-                    <img src="images/1.jpg" alt="">
-                    <img src="images/3.jpg" alt="">
-                    <img src="images/2.jpg" alt="">
-                    <img src="images/8.jpg" alt="">
-                </div>
-                <div class="column">
-                    <img src="images/6.jpg" alt="">
-                    <img src="images/5.jpg" alt="">
-                    <img src="images/7.jpg" alt="">
-                    <img src="images/4.jpeg" alt="">
-                </div>
-            </div>
-        </div>
+                <section class="galery">
+                    <div class="column">
+                        <img itemprop="image" src="images/1.jpg" alt="Изображение изделия №1">
+                        <img itemprop="image" src="images/3.jpg" alt="Изображение изделия №3">
+                        <img itemprop="image" src="images/2.jpg" alt="Изображение изделия №2">
+                        <img itemprop="image" src="images/8.jpg" alt="Изображение изделия №8">
+                    </div>
+                    <div class="column">
+                        <img itemprop="image" src="images/6.jpg" alt="Изображение изделия №6">
+                        <img itemprop="image" src="images/5.jpg" alt="Изображение изделия №5">
+                        <img itemprop="image" src="images/7.jpg" alt="Изображение изделия №7">
+                        <img itemprop="image" src="images/4.jpeg" alt="Изображение изделия №4">
+                    </div>
+                </section>  
+            </article>
+        </section>
     </main>
      <!-- Меню сайта -->
-     <nav>
-        <a href="#">На главную</a>
-        <a href="table.html">Информация</a>
-        <a href="about.html">О разработчике</a>
+     <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+        <a itemprop="url" rel="home" href="#">На главную</a>
+        <a itemprop="url" href="table.html">Информация</a>
+        <a itemprop="url" href="about.html">О разработчике</a>
     </nav>
     <!-- Подвал сайта -->
-    <footer>
+    <footer itemscope itemtype="http://schema.org/WPFooter">
         <!-- Контейнер с текущей датой -->
         <div class="date-container">
             <p id="date"></p>
         </div>
         <!-- Сведения о разработчике сайта -->
-        <div class="about">Разработчик сайта: Игорь Каминский</div>
+        <div class="about">Разработчик сайта: <span itemprop="author">Игорь Каминский</span></div>
         <!-- Версия сайта -->
         <div class="version">ver 1.0a</div>
     </footer>

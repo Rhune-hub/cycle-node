@@ -9,28 +9,28 @@
     <title>О авторе</title>
 </head>
 <body>
-    <!-- Шапка сайта -->
-    <header>
+     <!-- Шапка сайта -->
+     <header  itemscope itemtype="http://schema.org/Organization">
         <!-- Логотип сайта -->
         <div class="logo">
-            <img src="images/logo.png" alt="Логотип Лампочки">
+            <img itemprop="logo" src="images/logo.png" alt="Логотип Лампочки">
         </div>
-        <!-- Краткое описание сайте -->
+        <!-- Краткое описание сайта -->
         <div class="description">
-            <span>Лампы ручной работы в стиле Steampunk</span>
+            <span itemprop="description">Лампы ручной работы в стиле Steampunk</span>
         </div>
     </header>
     <!-- Основаня часть сайта -->
     <main>
         <!-- Блок с информацией о разработчике -->
-        <div class="content about-developer">
+        <article class="content about-developer" itemscope itemtype="https://schema.org/Person">
             <h2>О разработчике</h2>
-            <p>Сайт разработал <strong>Каминский Игорь</strong>, студент 3-го курса <i>ГГТУ им. П.О. Сухого</i>. Данный сайт разработан в качестве первого задания на тренингах по <i>FRONT-END</i> от <i>EPAM</i>.</p>
+            <p>Сайт разработал <strong itemprop="givenName">Каминский Игорь</strong>, <span itemprop="jobTitle">студент 3-го курса</span> <i itemprop="affiliation">ГГТУ им. П.О. Сухого</i>. Данный сайт разработан в качестве первого задания на тренингах по <i>FRONT-END</i> от <i itemprop="affiliation">EPAM</i>.</p>
             
             <p>Для связи с разработчиком сайта Вы можете использовать форму обратной связи, которая представлена ниже.</p>
-        </div>
+        </article>
         <!-- Форма обратной связи -->
-        <div class="feedback-form-container">
+        <section class="feedback-form-container">
             <form class="feedback-form">
                 <p class="feedback-form-title">ФОРМА ОБРАТНОЙ СВЯЗИ</p>
                 <span class="feedback-form-input">
@@ -44,22 +44,22 @@
                 <textarea class="feedback-form-textarea" name="feedback-text" id="feedback-text" placeholder="Укажите здесь свои вопросы и пожелания..." required></textarea>
                 <input class="feedback-form-button" type="submit">
             </form>
-        </div>
+        </section>
     </main>
      <!-- Меню сайта -->
      <nav>
-        <a href="home.html">На главную</a>
-        <a href="table.html">Информация</a>
-        <a href="#">О разработчике</a>
+        <a itemprop="url" rel="home" href="home.html">На главную</a>
+        <a itemprop="url" href="table.html">Информация</a>
+        <a itemprop="url" href="#">О разработчике</a>
     </nav>
     <!-- Подвал сайта -->
-    <footer>
+    <footer itemscope itemtype="http://schema.org/WPFooter">
         <!-- Контейнер с текущей датой -->
         <div class="date-container">
             <p id="date"></p>
         </div>
         <!-- Сведения о разработчике сайта -->
-        <div class="about">Разработчик сайта: Игорь Каминский</div>
+        <div class="about">Разработчик сайта: <span itemprop="author">Игорь Каминский</span></div>
         <!-- Версия сайта -->
         <div class="version">ver 1.0a</div>
     </footer>

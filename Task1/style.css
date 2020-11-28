@@ -53,7 +53,7 @@ main {
 }
 
 /* Стили оформления блоков текста на станице сайта */
-div.content {
+.content {
     background-color: cornsilk;
     border-radius: 2px;
     border: 1px solid #168713;
@@ -63,7 +63,7 @@ div.content {
     width: 80%;
 }
 /* Стиль заголовка */
-div.content h2 {
+ .content h2 {
     
     width: 100%-10px;
     text-align: right;
@@ -73,14 +73,14 @@ div.content h2 {
     background-color: #e6dede;
 }
 /* Стиль абзаца */
-div.content p {
+.content p {
     text-indent: 8%;
     text-align: justify;
     font-size: larger;
     font-weight: 500;
 }
 /* Стиль списка */
-div.content li {
+.content li {
     text-indent: 0%;
     margin-left: 4%;
     padding: 4px;

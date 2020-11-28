@@ -8,20 +8,20 @@
     <title>Таблица</title>
 </head>
 <body>
-    <!-- Шапка сайта -->
-    <header>
+     <!-- Шапка сайта -->
+     <header  itemscope itemtype="http://schema.org/Organization">
         <!-- Логотип сайта -->
         <div class="logo">
-            <img src="images/logo.png" alt="Логотип Лампочки">
+            <img itemprop="logo" src="images/logo.png" alt="Логотип Лампочки">
         </div>
-        <!-- Краткое описание сайте -->
+        <!-- Краткое описание сайта -->
         <div class="description">
-            <span>Лампы ручной работы в стиле Steampunk</span>
+            <span itemprop="description">Лампы ручной работы в стиле Steampunk</span>
         </div>
     </header>
     <!-- Основаня часть сайта -->
     <main>
-        <div class="content">
+        <section class="content">
             <h2>Информация об услугах</h2>
             <!-- Выбор стиля таблицы -->
             <div class="style-selector-container">
@@ -36,68 +36,68 @@
                 </form>
             </div>
             <!-- Таблица с описанием услуг -->
-            <table id="price-info" class="">
+            <table id="price-info" itemscope itemtype="http://schema.org/ProductCollection">
                 <thead>
                     <tr>
                         <th>Услуга</th>
                         <th>Описание</th>
-                        <th>Цена, BYN</th>
+                        <th>Цена,<span itemprop="priceCurrency">BYN</span></th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Основа лампы</td>
-                        <td>Вы можете выбрать материал лампы и ее цвет. Вы можете предложить собственный дизайн</td>
-                        <td>150</td>
+                    <tr itemscope itemtype="http://schema.org/Product">
+                        <td itemprop="name">Основа лампы</td>
+                        <td itemprop="itemCondition">Вы можете выбрать материал лампы и ее цвет. Вы можете предложить собственный дизайн</td>
+                        <td itemprop="price">150</td>
                     </tr>
-                    <tr>
-                        <td>Лампочки</td>
-                        <td>Мы также изготавливаем лампочки в стиле <i>Steampunk</i>. Но, если вам привычнее обычные, можете отказаться от данной услуги.</td>
-                        <td>40</td>
+                    <tr itemscope itemtype="http://schema.org/Product">
+                        <td itemprop="name">Лампочки</td>
+                        <td itemprop="itemCondition">Мы также изготавливаем лампочки в стиле <i>Steampunk</i>. Но, если вам привычнее обычные, можете отказаться от данной услуги.</td>
+                        <td itemprop="price">40</td>
                     </tr>
-                    <tr>
-                        <td>Индивидуальная надпись</td>
-                        <td>Вы можете заказать любой текст на лампе. Расположение текста выбираете Вы.</td>
-                        <td>25</td>
+                    <tr itemscope itemtype="http://schema.org/Product">
+                        <td itemprop="name">Индивидуальная надпись</td>
+                        <td itemprop="itemCondition">Вы можете заказать любой текст на лампе. Расположение текста выбираете Вы.</td>
+                        <td itemprop="price">25</td>
                     </tr>
-                    <tr>
-                        <td>Декорации</td>
-                        <td>Вы также можете выбрать различные декорации, которые можно установить на лампу или рядом с ней. Это придаст атмосферности.</td>
-                        <td>30</td>
+                    <tr itemscope itemtype="http://schema.org/Product">
+                        <td itemprop="name">Декорации</td>
+                        <td itemprop="itemCondition">Вы также можете выбрать различные декорации, которые можно установить на лампу или рядом с ней. Это придаст атмосферности.</td>
+                        <td itemprop="price">30</td>
                     </tr>
-                    <tr>
-                        <td>Ночной светильник-часы</td>
-                        <td>Оригинальный ночной светильник с лампочками-цифрами, которые показывают текущее время.</td>
-                        <td>200</td>
+                    <tr itemscope itemtype="http://schema.org/Product">
+                        <td itemprop="name">Ночной светильник-часы</td>
+                        <td itemprop="itemCondition">Оригинальный ночной светильник с лампочками-цифрами, которые показывают текущее время.</td>
+                        <td itemprop="price">200</td>
                     </tr>
-                    <tr>
-                        <td>Включение по хлопку</td>
-                        <td>С данной возможностью отпадет необходимость подходить к лампе, чтобы её выключить. Просто хлопните дважды, чтобы она включилась или выключилась.</td>
-                        <td>30</td>
+                    <tr itemscope itemtype="http://schema.org/Product">
+                        <td itemprop="name">Включение по хлопку</td>
+                        <td itemprop="itemCondition">С данной возможностью отпадет необходимость подходить к лампе, чтобы её выключить. Просто хлопните дважды, чтобы она включилась или выключилась.</td>
+                        <td itemprop="price">30</td>
                     </tr>
-                    <tr>
-                        <td>Включение без косания</td>
-                        <td>Дает возможность вкючать лампу без необходимости к ней прикосаться. Для этого достаточно провести рукой над ней в определенном месте.</td>
-                        <td>20</td>
+                    <tr itemscope itemtype="http://schema.org/Product">
+                        <td itemprop="name">Включение без косания</td>
+                        <td itemprop="itemCondition">Дает возможность вкючать лампу без необходимости к ней прикосаться. Для этого достаточно провести рукой над ней в определенном месте.</td>
+                        <td itemprop="price">20</td>
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </section>
     </main>
     <!-- Меню сайта -->
     <nav>
-        <a href="home.html">На главную</a>
-        <a href="#">Информация</a>
-        <a href="about.html">О разработчике</a>
+        <a itemprop="url" rel="home" href="home.html">На главную</a>
+        <a itemprop="url" href="#">Информация</a>
+        <a itemprop="url" href="about.html">О разработчике</a>
     </nav>
     <!-- Подвал сайта -->
-    <footer>
+    <footer itemscope itemtype="http://schema.org/WPFooter">
         <!-- Контейнер с текущей датой -->
         <div class="date-container">
             <p id="date"></p>
         </div>
         <!-- Сведения о разработчике сайта -->
-        <div class="about">Разработчик сайта: Игорь Каминский</div>
+        <div class="about">Разработчик сайта: <span itemprop="author">Игорь Каминский</span></div>
         <!-- Версия сайта -->
         <div class="version">ver 1.0a</div>
     </footer>
