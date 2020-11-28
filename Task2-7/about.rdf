@@ -1,0 +1,28 @@
+@prefix ns1: <https://schema.org/> .
+@prefix ns2: <http://www.w3.org/ns/rdfa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<> ns2:usesVocabulary ns1: .
+
+[] a <http://schema.org/SiteNavigationElement> ;
+    ns1:url <#>,
+        <about.html>,
+        <table.html> .
+
+[] a ns1:Organization ;
+    ns1:description "Лампы ручной работы в стиле Steampunk"@ru ;
+    ns1:logo <images/logo.png> .
+
+[] a ns1:WPFooter ;
+    ns1:author "Игорь Каминский"@ru .
+
+[] a ns1:Person ;
+    ns1:affiliation "EPAM"@ru,
+        "ГГТУ им. П.О. Сухого"@ru ;
+    ns1:givenName "Каминский Игорь"@ru ;
+    ns1:jobTitle "студент 3-го курса"@ru .
+
+

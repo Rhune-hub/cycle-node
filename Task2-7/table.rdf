@@ -1,0 +1,61 @@
+@prefix ns1: <https://schema.org/> .
+@prefix ns2: <http://www.w3.org/ns/rdfa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<> ns2:usesVocabulary ns1: .
+
+[] a ns1:Product ;
+    ns1:itemCondition "Вы также можете выбрать различные декорации, которые можно установить на лампу или рядом с ней. Это придаст атмосферности."@ru ;
+    ns1:name "Декорации"@ru ;
+    ns1:price "30"@ru .
+
+[] a ns1:WPFooter ;
+    ns1:author "Игорь Каминский"@ru .
+
+[] a ns1:Product ;
+    ns1:itemCondition "Вы можете выбрать материал лампы и ее цвет. Вы можете предложить собственный дизайн"@ru ;
+    ns1:name "Основа лампы"@ru ;
+    ns1:price "150"@ru .
+
+[] a schema:SiteNavigationElement ;
+    ns1:url <#>,
+        <about.html>,
+        <table.html> .
+
+[] a ns1:Product ;
+    ns1:itemCondition "Оригинальный ночной светильник с лампочками-цифрами, которые показывают текущее время."@ru ;
+    ns1:name "Ночной светильник-часы"@ru ;
+    ns1:price "200"@ru .
+
+[] a ns1:Product ;
+    ns1:itemCondition "С данной возможностью отпадет необходимость подходить к лампе, чтобы её выключить. Просто хлопните дважды, чтобы она включилась или выключилась."@ru ;
+    ns1:name "Включение по хлопку"@ru ;
+    ns1:price "30"@ru .
+
+[] a ns1:Product ;
+    ns1:itemCondition "Вы можете заказать любой текст на лампе. Расположение текста выбираете Вы."@ru ;
+    ns1:name "Индивидуальная надпись"@ru ;
+    ns1:price "25"@ru .
+
+[] a ns1:Product ;
+    ns1:itemCondition "Дает возможность вкючать лампу без необходимости к ней прикосаться. Для этого достаточно провести рукой над ней в определенном месте."@ru ;
+    ns1:name "Включение без косания"@ru ;
+    ns1:price "20"@ru .
+
+[] a ns1:Organization ;
+    ns1:description "Лампы ручной работы в стиле Steampunk"@ru ;
+    ns1:logo <images/logo.png> .
+
+[] a ns1:ProductCollection ;
+    schema:priceCurrency "BYN"@ru .
+
+[] a ns1:Product ;
+    ns1:itemCondition "Мы также изготавливаем лампочки в стиле Steampunk. Но, если вам привычнее обычные, можете отказаться от данной услуги."@ru ;
+    ns1:name "Лампочки"@ru ;
+    ns1:price "40"@ru .
+
+

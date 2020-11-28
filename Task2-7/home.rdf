@@ -1,0 +1,66 @@
+@prefix ns1: <https://schema.org/> .
+@prefix ns2: <http://www.w3.org/ns/rdfa#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<> ns2:usesVocabulary ns1: .
+
+[] a ns1:Article ;
+    ns1:address "РБ, Гомель, Речицкий пр-т 18"@ru ;
+    ns1:contactPoints [ a ns1:ContactPoint ;
+            ns1:email <mailto:lampochka_company@gmail.ru> ;
+            ns1:telephone <tel:375290987654> ] ;
+    ns1:description "\"Лампочка\" - это группа умелых мастеров с многолетним опытом создания ламп с индивидуальным дизайном в стиле Steampunk. Мы занимаемся тем, что нам нравится и это открывает нам практически безграничные возможности проявления нашей фантазии."@ru,
+        "В каждую лампу вкладывается много денег душа, индивидуальность, тем самым украшая Ваш дом оригинальным элементом, которому можно придумать собственную захватывающую легенду."@ru,
+        "Наша компания заняла узкую нишу в изготовлении оригинальных ламп в стиле Steampunk. Мы рады, что можем посвятить наши навыки и фантазию на создание оригинального подарка для Вас или Вашего знакомого, и очень надеемся, что новый элемент интерьера принесет атмосферу времен паровых машин к Вам в дом."@ru,
+        "Наша компания предлагает Вам следующие услуги:"@ru ;
+    ns1:name "\"Лампочка\""@ru,
+        "О нас"@ru ;
+    ns1:url <table.html> .
+
+[] a ns1:PostalAddress ;
+    ns1:addressLocality "РБ, Гомель"@ru ;
+    ns1:streetAddress "Речицкий пр-т 18"@ru .
+
+[] a ns1:Organization ;
+    ns1:description "Лампы ручной работы в стиле Steampunk"@ru ;
+    ns1:logo <images/logo.png> .
+
+[] a <http://schema.org/WPFooter> ;
+    ns1:author "Игорь Каминский"@ru .
+
+[] a ns1:Organization .
+
+[] a ns1:ItemList ;
+    ns1:owns [ a ns1:Product ;
+            ns1:itemOffered "ламп"@ru,
+                "лампочек"@ru ],
+        [ a ns1:Product ;
+            ns1:itemOffered "Разнообразный декор ручного изготовления"@ru ],
+        [ a ns1:Product ;
+            ns1:itemOffered "ночника с часами"@ru ],
+        [ a ns1:Product ;
+            ns1:description "позволят включать и выключать ее без прикосновений"@ru ;
+            ns1:itemOffered "датчиками"@ru ],
+        [ a ns1:Product ] .
+
+[] a <http://schema.org/SiteNavigationElement> ;
+    ns1:url <#>,
+        <about.html>,
+        <table.html> .
+
+[] a ns1:Article ;
+    ns1:description "Ниже представлены изображения с примерами наших ламп. Надеемся, что это поможет Вам лучше представить свою будущую лампу."@ru ;
+    ns1:image <images/1.jpg>,
+        <images/2.jpg>,
+        <images/3.jpg>,
+        <images/4.jpeg>,
+        <images/5.jpg>,
+        <images/6.jpg>,
+        <images/7.jpg>,
+        <images/8.jpg> ;
+    ns1:name "Галерея"@ru .
+
+
