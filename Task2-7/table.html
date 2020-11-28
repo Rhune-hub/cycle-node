@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="index.js" defer></script>
+    <title>Таблица</title>
+</head>
+<body>
+     <!-- Шапка сайта -->
+     <header vocab="https://schema.org/" typeof="Organization">
+        <!-- Логотип сайта -->
+        <div class="logo">
+            <img property="logo" src="images/logo.png" alt="Логотип Лампочки">
+        </div>
+        <!-- Краткое описание сайта -->
+        <div class="description">
+            <span property="description">Лампы ручной работы в стиле Steampunk</span>
+        </div>
+    </header>
+    <!-- Основаня часть сайта -->
+    <main>
+        <div class="content">
+            <h2>Информация об услугах</h2>
+            <!-- Выбор стиля таблицы -->
+            <div class="style-selector-container">
+                <form>
+                    <label for="style-selector">Выберите стиль таблицы: </label>
+                    <select name="style-selector" id="style-selector">
+                        <option value="">Без цвета</option>
+                        <option value="t01">Черно-белый стиль</option>
+                        <option value="t02">Тропический стиль</option>
+                        <option value="t03">Холодный стиль</option>
+                    </select>
+                </form>
+            </div>
+            <!-- Таблица с описанием услуг -->
+            <table id="price-info" vocab="https://schema.org/" typeof="ProductCollection">
+                <thead>
+                    <tr>
+                        <th>Услуга</th>
+                        <th>Описание</th>
+                        <th>Цена,<meta property="schema:priceCurrency" content="BYN">BYN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr vocab="https://schema.org/" typeof="Product">
+                        <td property="name">Основа лампы</td>
+                        <td property="itemCondition">Вы можете выбрать материал лампы и ее цвет. Вы можете предложить собственный дизайн</td>
+                        <td property="price">150</td>
+                    </tr>
+                    <tr vocab="https://schema.org/" typeof="Product">
+                        <td property="name">Лампочки</td>
+                        <td property="itemCondition">Мы также изготавливаем лампочки в стиле <i>Steampunk</i>. Но, если вам привычнее обычные, можете отказаться от данной услуги.</td>
+                        <td property="price">40</td>
+                    </tr>
+                    <tr vocab="https://schema.org/" typeof="Product">
+                        <td property="name">Индивидуальная надпись</td>
+                        <td property="itemCondition">Вы можете заказать любой текст на лампе. Расположение текста выбираете Вы.</td>
+                        <td property="price">25</td>
+                    </tr>
+                    <tr vocab="https://schema.org/" typeof="Product">
+                        <td property="name">Декорации</td>
+                        <td property="itemCondition">Вы также можете выбрать различные декорации, которые можно установить на лампу или рядом с ней. Это придаст атмосферности.</td>
+                        <td property="price">30</td>
+                    </tr>
+                    <tr vocab="https://schema.org/" typeof="Product">
+                        <td property="name">Ночной светильник-часы</td>
+                        <td property="itemCondition">Оригинальный ночной светильник с лампочками-цифрами, которые показывают текущее время.</td>
+                        <td property="price">200</td>
+                    </tr>
+                    <tr vocab="https://schema.org/" typeof="Product">
+                        <td property="name">Включение по хлопку</td>
+                        <td property="itemCondition">С данной возможностью отпадет необходимость подходить к лампе, чтобы её выключить. Просто хлопните дважды, чтобы она включилась или выключилась.</td>
+                        <td property="price">30</td>
+                    </tr>
+                    <tr vocab="https://schema.org/" typeof="Product">
+                        <td property="name">Включение без косания</td>
+                        <td property="itemCondition">Дает возможность вкючать лампу без необходимости к ней прикосаться. Для этого достаточно провести рукой над ней в определенном месте.</td>
+                        <td property="price">20</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <!-- Меню сайта -->
+    <nav vocab="https://schema.org/" typeof="http://schema.org/SiteNavigationElement">
+        <a property="url" rel="home" href="#">На главную</a>
+        <a property="url" href="table.html">Информация</a>
+        <a property="url" href="about.html">О разработчике</a>
+    </nav>
+    <!-- Подвал сайта -->
+    <footer vocab="https://schema.org/" typeof="WPFooter">
+        <!-- Контейнер с текущей датой -->
+        <div class="date-container">
+            <p id="date"></p>
+        </div>
+        <!-- Сведения о разработчике сайта -->
+        <div class="about">Разработчик сайта: <span property="author">Игорь Каминский</span></div>
+        <!-- Версия сайта -->
+        <div class="version">ver 1.0a</div>
+    </footer>
+    
+</body>
+</html>

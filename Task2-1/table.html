@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="index.js" defer></script>
+    <title>Таблица</title>
+</head>
+<body>
+     <!-- Шапка сайта -->
+     <header class="h-card">
+        <!-- Логотип сайта -->
+        <div class="logo u-logo hmedia">
+            <img class="photo" src="images/logo.png" alt="Логотип Лампочки">
+        </div>
+        <!-- Краткое описание сайта -->
+        <div class="description">
+            <span>Лампы ручной работы в стиле Steampunk</span>
+        </div>
+    </header>
+    <!-- Основаня часть сайта -->
+    <main>
+        <section class="content">
+            <h2>Информация об услугах</h2>
+            <!-- Выбор стиля таблицы -->
+            <div class="style-selector-container">
+                <form>
+                    <label for="style-selector">Выберите стиль таблицы: </label>
+                    <select name="style-selector" id="style-selector">
+                        <option value="">Без цвета</option>
+                        <option value="t01">Черно-белый стиль</option>
+                        <option value="t02">Тропический стиль</option>
+                        <option value="t03">Холодный стиль</option>
+                    </select>
+                </form>
+            </div>
+            <!-- Таблица с описанием услуг -->
+            <table id="price-info">
+                <thead>
+                    <tr>
+                        <th>Услуга</th>
+                        <th>Описание</th>
+                        <th>Цена,<span>BYN</span></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hproduct">
+                        <td class="fn">Основа лампы</td>
+                        <td class="description">Вы можете выбрать материал лампы и ее цвет. Вы можете предложить собственный дизайн</td>
+                        <td class="price">150</td>
+                    </tr>
+                    <tr class="hproduct">
+                        <td class="fn">Лампочки</td>
+                        <td class="description">Мы также изготавливаем лампочки в стиле <i>Steampunk</i>. Но, если вам привычнее обычные, можете отказаться от данной услуги.</td>
+                        <td class="price">40</td>
+                    </tr>
+                    <tr class="hproduct">
+                        <td class="fn">Индивидуальная надпись</td>
+                        <td class="description">Вы можете заказать любой текст на лампе. Расположение текста выбираете Вы.</td>
+                        <td class="price">25</td>
+                    </tr>
+                    <tr class="hproduct">
+                        <td class="fn">Декорации</td>
+                        <td class="description">Вы также можете выбрать различные декорации, которые можно установить на лампу или рядом с ней. Это придаст атмосферности.</td>
+                        <td class="price">30</td>
+                    </tr>
+                    <tr class="hproduct">
+                        <td class="fn">Ночной светильник-часы</td>
+                        <td class="description">Оригинальный ночной светильник с лампочками-цифрами, которые показывают текущее время.</td>
+                        <td class="price">200</td>
+                    </tr>
+                    <tr class="hproduct">
+                        <td class="fn">Включение по хлопку</td>
+                        <td class="description">С данной возможностью отпадет необходимость подходить к лампе, чтобы её выключить. Просто хлопните дважды, чтобы она включилась или выключилась.</td>
+                        <td class="price">30</td>
+                    </tr>
+                    <tr class="hproduct">
+                        <td class="fn">Включение без косания</td>
+                        <td class="description">Дает возможность вкючать лампу без необходимости к ней прикосаться. Для этого достаточно провести рукой над ней в определенном месте.</td>
+                        <td class="price">20</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <!-- Меню сайта -->
+    <nav>
+        <a class="u-url" rel="home" href="home.html">На главную</a>
+        <a  class="u-url" href="#">Информация</a>
+        <a  class="u-url" href="about.html">О разработчике</a>
+    </nav>
+    <!-- Подвал сайта -->
+    <footer>
+        <!-- Контейнер с текущей датой -->
+        <div class="date-container">
+            <p id="date"></p>
+        </div>
+        <!-- Сведения о разработчике сайта -->
+        <div class="about h-card">Разработчик сайта: <span class="p-first-name">Игорь </span><span class="p-last-name">Каминский</span></div>
+        <!-- Версия сайта -->
+        <div class="version">ver 1.0a</div>
+    </footer>
+    
+</body>
+</html>
