@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="index.js" defer></script>
+    
+    <title>О авторе</title>
+</head>
+<body>
+     <!-- Шапка сайта -->
+     <header class="h-card">
+        <!-- Логотип сайта -->
+        <div class="logdisc">
+
+            <div class="logo u-logo hmedia">
+                <img class="photo" src="images/logo.png" alt="Логотип Лампочки">
+            </div>
+            <!-- Краткое описание сайта -->
+            <div class="description">
+                <span>Лампы ручной работы в стиле Steampunk</span>
+            </div>
+        </div>
+        <!-- Меню сайта -->
+        <nav>
+            <ul>
+                <li><a class="u-url" rel="home" href="home.html">На главную</a></li>
+                <li><a class="u-url" href="table.html">Информация</a></li>
+                <li><a class="u-url" href="#">О разработчике</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <!-- Основаня часть сайта -->
+    <main>
+        <!-- Блок с информацией о разработчике -->
+        <article class="content about-developer h-card">
+            <h2>О разработчике</h2>
+            <p>Сайт разработал <strong class="p-name"><span class="h-last-name">Каминский</span> <span class="h-first-name">Игорь</span></strong>, <span class="p-job-title">студент 3-го курса</span> <i class="p-org">ГГТУ им. П.О. Сухого</i>. Данный сайт разработан в качестве первого задания на тренингах по <i>FRONT-END</i> от <i class="p-org">EPAM</i>.</p>
+            
+            <p>Для связи с разработчиком сайта Вы можете использовать форму обратной связи, которая представлена ниже.</p>
+        </article>
+        <!-- Форма обратной связи -->
+        <section class="feedback-form-container">
+            <form class="feedback-form">
+                <p class="feedback-form-title">ФОРМА ОБРАТНОЙ СВЯЗИ</p>
+                <span class="feedback-form-input">
+                    <label for="visitor-email">E-mail:</label>
+                    <input type="email" name="visitor-email" id="visitor-email" placeholder="Введите свой email.." required>
+                </span>
+                <span class="feedback-form-input">
+                    <label for="visitor-name">Имя:</label>
+                    <input type="text" name="visitor-name" id="visitor-name" placeholder="Введите свое имя.." required>
+                </span>
+                <textarea class="feedback-form-textarea" name="feedback-text" id="feedback-text" placeholder="Укажите здесь свои вопросы и пожелания..." required></textarea>
+                <input class="feedback-form-button" type="submit">
+            </form>
+        </section>
+    </main>
+    <!-- Подвал сайта -->
+    <footer>
+        <!-- Контейнер с текущей датой -->
+        <div class="date-container">
+            <p id="date"></p>
+        </div>
+        <!-- Сведения о разработчике сайта -->
+        <div class="about h-card">Разработчик сайта: <span class="p-first-name">Игорь </span><span class="p-last-name">Каминский</span></div>
+        <!-- Версия сайта -->
+        <div class="version">ver 2.0a</div>
+    </footer>
+</body>
+</html>
