@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator-container">
+        <form name="calculator" class="calculator">
+
+            <div class="calculator-input-container">
+                <input type="text" name="calculator-input" id="calculator-input" class="calculator-input">
+            </div>
+            <div class="calculator-mode-container">
+                <div class="calculator-mode-int-float-container">
+                    <div class="calculator-mode-int-container">
+                        <input type="radio" name="calculator-mode-int-float" class="calculator-mode-radio" id="calculator-mode-int" checked>
+                        <label for="calculator-mode-int" class="calculator-mode-radio-label">Integer</label>
+                    </div>
+                    <div class="calculator-mode-float-container">
+                        <input type="radio" name="calculator-mode-int-float" class="calculator-mode-radio" id="calculator-mode-float">
+                        <label for="calculator-mode-float" class="calculator-mode-radio-label">Float</label>
+                    </div>
+                </div>
+                <div class="calculator-mode-priority-container">
+                    <input type="checkbox" name="calculator-mode-priority-checkbox" class="calculator-mode-priority-checkbox" id="calculator-mode-priority">
+                    <label for="calculator-mode-priority" class="calculator-mode-priority-checkbox-label">Operator priority</label>
+                </div>
+            </div>
+            <div class="calculator-output-container">
+                <input type="text" name="calculator-output" id="calculator-output" class="calculator-output">
+            </div>
+            <div class="calculator-buttons-container">
+                <input type="button" value="CE" class="calculator-button system">
+                <input type="button" value="C" class="calculator-button system">
+                <input type="button" value="<=" class="calculator-button system">
+                <input type="button" value="/" class="calculator-button operator">
+                <input type="button" value="7" class="calculator-button number">
+                <input type="button" value="8" class="calculator-button number">
+                <input type="button" value="9" class="calculator-button number">
+                <input type="button" value="*" class="calculator-button operator">
+                <input type="button" value="4" class="calculator-button number">
+                <input type="button" value="5" class="calculator-button number">
+                <input type="button" value="6" class="calculator-button number">
+                <input type="button" value="-" class="calculator-button operator">
+                <input type="button" value="1" class="calculator-button number">
+                <input type="button" value="2" class="calculator-button number">
+                <input type="button" value="3" class="calculator-button number">
+                <input type="button" value="+" class="calculator-button operator">
+                <input type="button" value="0" class="calculator-button number">
+                <input type="button" value="." class="calculator-button" id="calculator-point" disabled>
+                <input type="submit" value="=" class="calculator-button system" id="calculator-equals">
+            </div>
+            <div class="calculator-result-container">
+                <input type="button" value="View Results" class="calculator-button result" id="calculator-result" disabled>
+                <input type="button" value="Send Results" class="calculator-button server" id="calculator-server" disabled>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
