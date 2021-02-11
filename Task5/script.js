@@ -216,37 +216,35 @@ function calcHandsHandler(e) {
 //Function send result to new window
 function resultHandler(e) {
     let resultWindow = window.open('about:blank','Calcualtor results','width=600,height=400,top=200,left=650,menubar=no,location=no');
-    resultWindow.onload = () => {
-        const tdStyle = 'border: 1px solid black';
-        let div = resultWindow.document.createElement('div');
-        div.style.cssText = 'margin: 10px auto;';
-        let table = resultWindow.document.createElement('table');
-        table.style.cssText = 'border: 1px solid black; border-collapse: collapse;font-size:2em;';
-        let header = resultWindow.document.createElement('tr');
-        let numHead = resultWindow.document.createElement('td');
-        numHead.textContent = ' # '; 
-        numHead.style.cssText = tdStyle;
-        let exprHead = resultWindow.document.createElement('td');
-        exprHead.textContent = 'Calculated expressions';
-        exprHead.style.cssText = tdStyle;
-        header.appendChild(numHead);
-        header.appendChild(exprHead);
-        table.appendChild(header);
-        for (let i = 0; i < results.length; i++) {
-            let row = resultWindow.document.createElement('tr');
-            let num = resultWindow.document.createElement('td');
-            num.textContent = i+1;
-            num.style.cssText = tdStyle;
-            let expression = resultWindow.document.createElement('td');
-            expression.textContent = results[i];
-            expression.style.cssText = tdStyle;
-            row.appendChild(num);
-            row.appendChild(expression);
-            table.appendChild(row);
-        }
-        div.appendChild(table);
-        resultWindow.document.body.appendChild(div);
-    };
+    const tdStyle = 'border: 1px solid black';
+    let div = resultWindow.document.createElement('div');
+    div.style.cssText = 'margin: 10px auto;';
+    let table = resultWindow.document.createElement('table');
+    table.style.cssText = 'border: 1px solid black; border-collapse: collapse;font-size:2em;';
+    let header = resultWindow.document.createElement('tr');
+    let numHead = resultWindow.document.createElement('td');
+    numHead.textContent = ' # '; 
+    numHead.style.cssText = tdStyle;
+    let exprHead = resultWindow.document.createElement('td');
+    exprHead.textContent = 'Calculated expressions';
+    exprHead.style.cssText = tdStyle;
+    header.appendChild(numHead);
+    header.appendChild(exprHead);
+    table.appendChild(header);
+    for (let i = 0; i < results.length; i++) {
+        let row = resultWindow.document.createElement('tr');
+        let num = resultWindow.document.createElement('td');
+        num.textContent = i+1;
+        num.style.cssText = tdStyle;
+        let expression = resultWindow.document.createElement('td');
+        expression.textContent = results[i];
+        expression.style.cssText = tdStyle;
+        row.appendChild(num);
+        row.appendChild(expression);
+        table.appendChild(row);
+    }
+    div.appendChild(table);
+    resultWindow.document.write(div.innerHTML);
 }
 //Function send results to server
 async function sendToServer() {
