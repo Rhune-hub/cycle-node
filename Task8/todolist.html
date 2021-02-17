@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>TODO-LIST</title>
+</head>
+<body>
+    <div class="web-app">
+
+        <div class="main-container todolist" data-num="1">
+            <span class="container-name">First TODO-List</span>
+        <div class="activities-container">
+           
+        </div>
+    </div>
+    <div class="main-container todolist" data-num="2">
+        <span class="container-name">Second TODO-List</span>
+        <div class="activities-container"></div>
+    </div>
+    <div class="main-container todolist" data-num="3">
+        <span class="container-name">Third TODO-List</span>
+        <div class="activities-container"></div>
+    </div>
+    <div class="main-container ajaxlogs">
+        <span class="container-name">AJAX Logs</span>
+        <div class="ajax-logs-container"></div>
+    </div>
+    <div class="main-container editor">
+        <span class="container-name">Activity editor</span>
+        <div class="editor-form-container">
+            <form class="editor-form">
+                <label>File number: </label><select name="new-activity-file" id="editor-form-file"></select><br>
+                <label>Name: </label><br><input type="text" id="editor-form-name" name="new-activity-name"><br>
+                <label>Date/Time: </label><br><input type="datetime-local" id="editor-form-datetime" name="new-activity-datetime"><br>
+                <label>Priority: </label><select name="new-activity-priority" id="editor-form-select"></select><br>
+                <label>Note: </label><br><textarea name="new-activity-note" id="editor-form-note"></textarea><br>               
+                <input type="submit" value="Save">
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
