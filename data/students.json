@@ -1,0 +1,30 @@
+{
+    "1": {
+        "id": "1",
+        "firstName": "Igor",
+        "secondName": "Kaminsky",
+        "age": "20",
+        "speciality": "Engineer - System programmer"
+    },
+    "2": {
+        "id": "2",
+        "firstName": "Felix",
+        "secondName": "Ivanov",
+        "age": "19",
+        "speciality": "Engineer - Programmer"
+    },
+    "3": {
+        "id": "3",
+        "firstName": "Ivan",
+        "secondName": "Petrov",
+        "age": "23",
+        "speciality": "Philosopher"
+    },
+    "5": {
+        "id": "5",
+        "firstName": "Alexander",
+        "secondName": "Fedorovich",
+        "age": "18",
+        "speciality": "Electronics Engineer"
+    }
+}

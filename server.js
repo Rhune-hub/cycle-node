@@ -1,35 +1,23 @@
+/**
+ * Main app file 
+ */
 'use strict';
-let http = require('http');
-let nodeStatic = require('node-static');
-let file = new nodeStatic.Server('.');
 
-http.createServer((req,res)=>{file.serve(req,res);}).listen(8080);
+//Add modules
+const express = require('express');
+const bodyParser = require('body-parser');
+const fs = require('fs');
 
-console.log('Server running on port 8080');
-
-const express = require("express");
-  
 const app = express();
-app.post("/save", jsonParser, function (request, response) {
-  console.log(request.body);
-  if(!request.body) return response.sendStatus(400);
-   
-  response.json(request.body); // отправляем пришедший ответ обратно
-});
 
-function sendRes(url,contentType,res) {
-  let file = path.join(__dirname+'/data/',url);
-  fs.readFile(file,(err,content) => {
-    if (err) {
-      res.writeHead(404);
-      res.write('File not found');
-      res.end();
-      console.error(`Error 404 ${file}`);
-    }
-    else {
-      res.writeHead(200, {'Content-Type': contentType});
-      res.write(content);
-      res.end();
-    }
-  })
-}
+app.use(express.static(__dirname + '/public'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true}));
+
+//Add routes controller
+const routes = require('./routes/routes.js')(app, fs);
+
+//Start server
+const server = app.listen(3000, () => {
+  console.log('Listening on port %s...', server.address().port);
+});
