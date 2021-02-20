@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
      */
     Array.from(studentForm.querySelectorAll('input[type="submit"],input[type="button"]'))
         .forEach(item => item.addEventListener('click', (e) => {
-        if (Date.now() - lastCall < 250) {   
+        if (Date.now() - lastCall > 250) {   
             if (e.target.dataset.action === 'prev') {
                 /**
                  * Fetch to previous Student entity
