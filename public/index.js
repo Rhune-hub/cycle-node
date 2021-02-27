@@ -55,9 +55,9 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         document.body.animate(
             [ // keyframes
-                { backgroundColot: `rgba(${color},0)` },
+                { backgroundColor: `rgba(${color},0)` },
                 { backgroundColor: `rgba(${color},0.3)` },
-                { backgroundColot: `rgba(${color},0)` },
+                { backgroundColor: `rgba(${color},0)` },
             ], { // timing options
                 duration: 700,
                 iterations: 1
