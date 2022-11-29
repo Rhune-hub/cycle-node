@@ -14,7 +14,7 @@ class Student {
 document.addEventListener('DOMContentLoaded', function() {
     
     //Application constants
-    const studentURL = `https://stormy-slug-underclothes.cyclic.app/students`;
+    const studentURL = `/students`;
     const studentForm = document.querySelector('#student-form');    
     //Last call timer
     let lastCall = 0;
